@@ -1,0 +1,32 @@
+<div class="card-title">
+  Selected Employee: {{employee?.name}}
+</div>
+<div class="card-text">
+  <ng-container *ngIf="address?.length === 0">
+    <div class="alert alert-danger" role="alert">
+      <div class="alert-items">
+        <div class="alert-item static">
+          <div class="alert-icon-wrapper">
+            <clr-icon class="alert-icon" shape="exclamation-circle"></clr-icon>
+          </div>
+          <span class="alert-text">No Address found for <span class="semi-bold">{{employee?.name}}.</span></span>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+  <clr-accordion [clrAccordionMultiPanel]='true'>
+    <ng-container *ngFor="let adrs of address; let i = index;">
+      <clr-accordion-panel>
+        <clr-accordion-title>Address {{ i + 1}}</clr-accordion-title>
+        <clr-accordion-content >
+          <ul class="list">
+            <li>Street: {{adrs?.street}}</li>
+            <li>City: {{adrs?.city}}</li>
+            <li>Country: {{adrs?.country}}</li>
+          </ul>
+        </clr-accordion-content>
+      </clr-accordion-panel>
+    </ng-container>
+  </clr-accordion>
+
+</div>

@@ -1,0 +1,23 @@
+<div class="card-title">
+  Selected Employee: {{selected?.name}}
+</div>
+<div class="card-text">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Employee Id</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Sex</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let emp of employees" [ngClass]="{'selected': selected?.id === emp?.id}" (click)="onClickEmployee(emp)">
+        <td>{{emp?.id}}</td>
+        <td>{{emp?.name}}</td>
+        <td>{{emp?.sex}}</td>
+        <td>{{emp?.age}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

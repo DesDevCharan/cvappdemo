@@ -1,0 +1,6 @@
+@import "../../../../node_modules/@clr/ui/src/color/variables.color";
+@import "../../../../node_modules/@clr/ui/src/utils/variables.global";
+@import "../../../../node_modules/@clr/ui/src/typography/variables.typography";
+.semi-bold {
+  font-weight: $clr-font-weight-bold;
+}

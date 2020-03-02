@@ -1,0 +1,59 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Radha",
+      "age": "25",
+      "sex": "Female",
+      "address": [
+        {
+          "street": "22 Rue du Grenier Saint-Lazare",
+          "postalCode": "75003",
+          "city": "Paris",
+          "countryCode": "FRA",
+          "country": "France",
+          "text": "22 Rue du Grenier Saint-Lazare\n75003 Paris\nFrance"
+        },
+        {
+          "street": "22 Mina street",
+          "postalCode": "75003",
+          "city": "Durban",
+          "countryCode": "SA",
+          "country": "South Africa",
+          "text": "22 Mina street\n75003 Paris\nFrance"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Krishna",
+      "age": "23",
+      "sex": "Male",
+      "address": [
+        {
+          "street": "21 Mina street",
+          "postalCode": "75003",
+          "city": "Durban",
+          "countryCode": "SL",
+          "country": "Sri Lanka",
+          "text": "21 Mina street\n75003 Durban\nSri Lanka"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Vishnu",
+      "age": "23",
+      "sex": "Male",
+      "address": []
+    },
+    {
+      "id": 4,
+      "name": "Shiv",
+      "age": "25",
+      "sex": "Male",
+      "address": []
+    }
+  ],
+  "fromdb": false
+}
